@@ -1,0 +1,272 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+
+\titleformat{\section}{
+    \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+    \item\small{
+        {#1 \vspace{-2pt}}
+    }
+}
+
+% \newcommand{\resumeSubheading}[4]{
+%     \vspace{-2pt}\item
+%         \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+%             \textbf{#1} & #2 \\
+%             \textit{\small#3} & \textit{\small #4} \\
+%         \end{tabular*}\vspace{-7pt}
+% }
+
+\newcommand{\resumeSubheading}[4]{
+    \vspace{-2pt}\item
+        \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+            \textbf{#1} & #2 \\
+            \ifx&#3&%
+            \else%
+                \textit{\small#3} &%
+            \fi%
+            \ifx&#4&%
+            \else%
+                \textit{\small#4}%
+            \fi%
+        \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+        \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+            \textit{\small#1} & \textit{\small #2} \\
+        \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+        \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+            \small#1 & #2 \\
+        \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%     \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%     \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Nirmal Mevada} \\ \vspace{1pt}
+    \small +91 97251 64508 $|$ \href{mailto:nirmalmevada008@gmail.com}{\underline{nirmalmevada008@gmail}} $|$ 
+    \href{https://www.linkedin.com/in/nirmalmevada/}{\underline{linkedin.com/in/nirmalmevada}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+            {Nirma University}
+            {Ahmedabad, Gujarat}
+            {Bachelor of Technology in Computer Engineering; CGPA:8.2/10}
+            {July 2016 -- May 2020}
+    \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+            {D. E. Shaw India Pvt. Ltd.}{Hyderabad, Telangana}{}{}
+            \resumeSubSubheading{Project Lead}{Jan. 2025 -- Present}
+            \resumeItemListStart
+                \resumeItem{
+                    Part of the FEEDS team, responsible for developing and %
+                    maintaining low-latency global market data infrastructure %
+                    for trading systems
+                }
+                \resumeItem{
+                    Loaded and validated 20+ years of Futures data for 35+ %
+                    exchanges (120+ contracts)
+                }
+                \resumeItem{
+                    Managed team of 4 to load and validate 20+ yrs of NSE %
+                    F\&O data (60T+ records), addressing %
+                    missing order executions
+                }
+            \resumeItemListEnd
+
+            \resumeSubSubheading{Senior Member Technical}{Jan. 2023 -- Dec. 2024}
+            \resumeItemListStart
+                \resumeItem{
+                    Developed data quality framework validating %
+                    market data across exchanges and alert downstream %
+                    applications; capable of validating 15+ years of data %
+                    for 12 strategies in 3 days
+                }
+                \resumeItem{
+                    Managed 20+ years of BONDS historical data loading and %
+                    validations (cross-source) for 5+ exchanges
+                }
+                \resumeItem{
+                    Designed Kafka publishing framework for UI applications %
+                    achieving sub-minute latency with minimal config
+                }
+            \resumeItemListEnd
+
+            \resumeSubSubheading{Member Technical}{Dec. 2020 -- Dec. 2022}
+            \resumeItemListStart    
+                \resumeItem{
+                    Automated Exchange-Driven-Changes (EDCs), reducing TAT %
+                    by 60\%
+                }
+                \resumeItem{
+                    Implemented Crypto data pipeline for 6+ exchanges %
+                    (150+ symbols), developing websocket recorders supporting %
+                    25k-level order books
+                }
+                \resumeItem{
+                    Built a real-time log parsing system for 1000+ processes %
+                    using the ELK stack
+                }
+            \resumeItemListEnd
+
+        \resumeSubheading
+            {Samsung R\&D Institute}{Noida, Uttar Pradesh}
+            {Software Developer Intern}{Jan. 2020 -- April 2020}
+            \resumeItemListStart
+                \resumeItem{Worked as part of Camera Systems team.}
+                \resumeItem{
+                    Implemented a U-Net-based deep learning model for %
+                    real-time image de-blurring
+                }
+            \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+            {\textbf{Single Feed Integrity Checker} $|$ \emph{Python}}
+            {June 2024 -- Present}
+            \resumeItemListStart
+                \resumeItem{
+                    Developed a framework to validate market data integrity %
+                    and alert downstream applications
+                }
+                \resumeItem{
+                    Demonstrated POC validating 15+ years of data for 12 %
+                    strategies in 3 days; capable of handling millions of %
+                    records across 50+ feeds with sub-minute latency
+                }
+            \resumeItemListEnd
+        \resumeProjectHeading
+            {\textbf{Data comparator and Analysis Tool} $|$ \emph{Python, DJS/HighCharts, DataFrames/Pandas}}
+            {Jan. 2023 -- July 2023}
+            \resumeItemListStart
+                \resumeItem{
+                    Python based framework to compare and analyze market data %
+                    using Charts; supporting various data formats, types %
+                    (L1, L2, L3) and latency parameters.
+                }
+                \resumeItem{
+                    Generates interactive multi-series charts with %
+                    aggregations and supports parallelism for large datasets
+                }
+            \resumeItemListEnd
+        \resumeProjectHeading
+            {\textbf{Log Parsing and Analysis Tool} $|$ \emph{Python, LogStash, Influx/ElasticSearch, Grafana}}
+            {Mar. 2022 -- Nov. 2022}
+            \resumeItemListStart
+                \resumeItem{
+                    Developed real-time log parsing and monitoring system with %
+                    ELK stack
+                }
+                \resumeItem{
+                    Demonstrated POC for 1000+ processes across distributed %
+                    servers achieving latency in seconds.
+                }
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+    \begin{itemize}[leftmargin=0.15in, label={}]
+        \small{\item{
+            \textbf{Languages}{: Python, C/C++, Java} \\
+            \textbf{Frameworks/Tools}{: Grafana, Kafka, LogStash, Influx, ElasticSearch} \\
+            \textbf{Developer Tools}{: Git, Jupyter, VS Code} \\
+            \textbf{Libraries}{: Pandas, NumPy}
+        }}
+    \end{itemize}
+
+%-------------------------------------------
+\end{document}
